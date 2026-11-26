@@ -61,6 +61,7 @@ export const NAV: NavSection[] = [
   {
     title: "Developers",
     items: [
+      { slug: "developers/inference", title: "Orvyn models API" },
       { slug: "developers/oauth", title: "Sign in with Orvyn (OAuth)" },
       { slug: "developers/public-api", title: "Public read API" },
       { slug: "developers/mcp", title: "MCP server" },
