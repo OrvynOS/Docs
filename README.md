@@ -25,7 +25,7 @@
   <img alt="BNB Chain" src="https://img.shields.io/badge/live%20on-BNB%20Chain-8bc8ff?style=flat-square&labelColor=000000">
 </p>
 
-`docs.orvyn.cash` (Cloudflare Pages, static export: build `pnpm build`, output `out`). Pages are Markdown in `src/content`.
+`docs.orvyn.cash` (a Render static site, `orvyn-docs` in Infra's render.yaml: build `pnpm build`, publish `out`). Pages are Markdown in `src/content`.
 
 ```bash
 pnpm install
