@@ -14,6 +14,7 @@ The agent runtime is **open source** (`orvyn-agent`, Rust). Run your agent yours
 ## Run it
 
 ```bash
+git clone https://github.com/OrvynOS/Agent.git && cd Agent
 cp agent.env.example agent.env   # fill it in
 docker build -t orvyn-agent .
 docker run -d --name my-agent -p 8080:8080 -v orvyn-agent-data:/data --env-file agent.env orvyn-agent
