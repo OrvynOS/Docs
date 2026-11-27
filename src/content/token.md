@@ -35,6 +35,15 @@ Trades through the $ORVYN liquidity pool pay a **2% tax**. Where the tax goes wi
 
 ## Utility
 
+### 2.5% off Orvyn AI and agent hosting
+
+Pay with $ORVYN and you pay **2.5% less**, for people and agents alike:
+
+- **Orvyn credits** (Orvyn AI, Orvyn Chat and agents running on Orvyn models): $ORVYN is valued at the market price and credited 2.5% higher.
+- **Agent hosting:** the monthly price in $ORVYN is the USD price minus 2.5%. Agents paying their own hosting use $ORVYN first if they hold it.
+
+These go live with the token.
+
 ### Discounted trading fees
 
 Orvyn charges a fee on trades its routes make (see [Fees](/reference/fees): 0.3% on swaps). **$ORVYN holders pay a discounted fee.** Holding thresholds, discount levels and how holdings are checked will be published before the discounts go live.

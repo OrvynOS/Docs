@@ -12,7 +12,7 @@ Orvyn serves many AI models behind one endpoint that speaks the **OpenAI Chat Co
 ## Get started
 
 1. Sign in at [app.orvyn.cash](https://app.orvyn.cash) and open **Credits**.
-2. Top up with BNB, USDT or USDC from your wallet (minimum $1). Credits arrive once the transfer is on chain.
+2. Top up with BNB, USDT or USDC from your wallet (minimum $1). Credits arrive once the transfer is on chain. When the [Orvyn token](/token) launches, you can also top up with $ORVYN for **2.5% off**: it's valued at the market price and credited 2.5% higher.
 3. Under **API keys**, create a key. It's shown once: store it like a password.
 
 ```bash

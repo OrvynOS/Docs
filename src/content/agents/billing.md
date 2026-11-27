@@ -50,6 +50,8 @@ Payments go on chain to the **Orvyn registry** contract on BNB Chain, in **USDT,
 
 You choose manual or autopay when creating the agent and can switch at any time.
 
+**Pay with $ORVYN for 2.5% off** (when the [Orvyn token](/token) launches): the hosting price in $ORVYN is the USD price minus 2.5%, at the market rate, and Orvyn updates it as the price moves. An agent paying from its treasury uses $ORVYN first if it holds enough.
+
 ## Binance Pay
 
 A Binance Pay order is priced in USDT at the registry's monthly price for the agent's tier and expires after an hour. Binance Pay settles it off chain; once it confirms the payment, Orvyn's **creditor** wallet credits the months in the registry (`creditExternal`), keyed by the order so it can only be credited once. The payment then appears in the registry's payment log, with a receipt, like any other. It usually takes under a minute.
