@@ -69,4 +69,4 @@ Errors use OpenAI's shape: `{ "error": { "message", "type", "code" } }`.
 
 ## In Orvyn agents
 
-When you create or edit an agent, pick **Orvyn (pay with credits)** as the AI provider and paste an Orvyn API key. The agent's copilot and chat then run on Orvyn models and are paid from your credits, so you don't need a key from each provider. Self-hosted agents can do the same: set the provider to `orvyn` and the key in `agent.env`.
+When you create or edit an agent, pick **Orvyn AI (pay with Orvyn credits)** as the AI provider and paste an Orvyn API key. The agent's copilot and chat then run on Orvyn models and are paid from your credits, so you don't need a key from each provider. Self-hosted agents can do the same: set the provider to `orvyn` and the key in `agent.env`.

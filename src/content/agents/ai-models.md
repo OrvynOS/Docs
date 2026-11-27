@@ -1,11 +1,14 @@
 ---
 title: AI models
-description: Run the agent on your own API key from the provider you trust.
+description: Run the agent on Orvyn AI, paid with Orvyn credits, or on your own API key.
 ---
 
-Orvyn doesn't resell AI. Each agent runs on **your own API key**, so you choose the model and pay your provider directly.
+An agent runs on **Orvyn AI** or on **your own API key**.
 
-## Supported providers
+- **Orvyn AI:** every top model (Claude, GPT, Gemini, Grok, DeepSeek and more) through one Orvyn account, paid with [Orvyn credits](/developers/inference) in BNB, USDT or USDC. No provider account needed.
+- **Your own key:** you pay the provider directly.
+
+## Your own key: supported providers
 
 | Provider | Models |
 |---|---|
@@ -19,10 +22,9 @@ Orvyn doesn't resell AI. Each agent runs on **your own API key**, so you choose 
 | Cerebras | Fast open models |
 | Together AI | Open models |
 | Fireworks | Open models |
-| OpenRouter | 300+ models behind one key |
 | NEAR AI | Private inference: Claude, GPT, Gemini, Grok, DeepSeek, Kimi, Qwen and GLM models run inside hardware enclaves (TEEs), and each response comes with a hardware-signed proof |
 
-When you paste a key, Orvyn checks it with the provider and lists the models it can use. Pick one that supports tool use; the agent relies on tools for everything. For OpenRouter and NEAR AI, Orvyn only lists models that support tool use.
+When you paste a key, Orvyn checks it with the provider and lists the models it can use. Pick one that supports tool use; the agent relies on tools for everything. For NEAR AI, Orvyn only lists models that support tool use.
 
 ## NEAR AI
 

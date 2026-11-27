@@ -15,7 +15,7 @@ Conversations live on Orvyn's server, so a conversation you start on your comput
 
 ## Sign in and your AI
 
-Sign in with Orvyn: Vyn shows a code and you approve it at [app.orvyn.cash/device](https://app.orvyn.cash/device). She runs on your own AI provider key, stored encrypted on Orvyn's server.
+Sign in with Orvyn: Vyn shows a code and you approve it at [app.orvyn.cash/device](https://app.orvyn.cash/device). She works right away on **Orvyn AI** (Claude Haiku 5.5): each month Orvyn covers a free allowance of her usage, and after that she draws on your [Orvyn credits](/developers/inference). In Vyn's settings you can pick another Orvyn AI model, or use your own AI provider key instead (stored encrypted on Orvyn's server).
 
 ## What she can do
 

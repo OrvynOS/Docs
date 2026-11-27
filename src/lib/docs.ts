@@ -46,8 +46,8 @@ export const NAV: NavSection[] = [
     ],
   },
   {
-    title: "Quiver token",
-    items: [{ slug: "quiver", title: "Quiver ($QUIVER)" }],
+    title: "Orvyn token",
+    items: [{ slug: "token", title: "Orvyn ($ORVYN)" }],
   },
   {
     title: "OrvynID",
