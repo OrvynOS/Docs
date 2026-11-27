@@ -42,6 +42,8 @@ print(reply.choices[0].message.content, reply.usage.cost)
 
 `GET /v1/models` lists the models your key can use. Orvyn offers a curated set from Anthropic, OpenAI, Google, xAI, DeepSeek, Qwen, Moonshot, Z.ai and Mistral; the [Credits page](https://app.orvyn.cash/credits) and Orvyn Chat show each one's price per million tokens.
 
+**Default model:** Claude Haiku 5.5 (`anthropic/claude-haiku-5.5`). A request without `model` uses your default, which you can change in Orvyn Chat's model picker (**Make … my default**) or with `PUT /v1/default-model` (`{ "model": "<id>" }`, or `null` for Orvyn's default). `GET /v1/default-model` returns it.
+
 **Orvyn Model**, Orvyn's own model, is coming soon. It's listed in Orvyn Chat but can't be called yet.
 
 ## What's supported

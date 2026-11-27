@@ -33,14 +33,16 @@ Vyness shows a code and opens [app.orvyn.cash/device](https://app.orvyn.cash/dev
 ## Run an agent
 
 ```bash
-vyness claude                 # Claude Code; Opus, Sonnet and Haiku map to Claude Opus 5.5, Sonnet 5.5 and Haiku 5.5
+vyness claude                 # Claude Code, on your default model
 vyness claude --model anthropic/claude-opus-5.5
 vyness opencode               # OpenCode, with an "Orvyn AI" provider
-vyness aider src/main.rs      # Aider, on Claude Sonnet 5.5 unless you pass --model
+vyness aider src/main.rs      # Aider, on your default model unless you pass --model
 vyness run -- my-agent --task "fix the tests"
 ```
 
-Arguments after the command go to the agent unchanged. Set `--model` (or `VYNESS_MODEL`) to pick any model from `vyness models`.
+Agents start on **your default model**: Claude Haiku 5.5 unless you choose another. Change it with `vyness model <id>` (or in Orvyn Chat), see it with `vyness model`, and go back with `vyness model --reset`. For one run, pass `--model` (or set `VYNESS_MODEL`). In Claude Code, `/model` still switches between the Opus, Sonnet and Haiku tiers.
+
+Arguments after the command go to the agent unchanged.
 
 `vyness run` and `vyness env` set the following variables, so any tool that reads them works:
 
@@ -56,6 +58,7 @@ Arguments after the command go to the agent unchanged. Set `--model` (or `VYNESS
 ```bash
 vyness credits     # your balance
 vyness models      # the models Orvyn AI serves
+vyness model       # your default model (vyness model <id> to change it)
 vyness status      # who is signed in on this computer
 vyness logout      # forget this computer's key
 ```
