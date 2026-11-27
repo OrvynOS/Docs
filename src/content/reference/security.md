@@ -29,7 +29,7 @@ description: Who can do what with an agent's funds and identity.
 
 | Who | Can | Can't |
 |---|---|---|
-| **The agent on autopilot** | Trade and pay through its plugins and x402, inside the limits in code and the wallet policy's caps | Exceed any limit; loosen or remove its required stop-loss; spend the gas reserve |
+| **The agent in copilot** | Trade and pay through its plugins and x402, inside the limits in code and the wallet policy's caps | Exceed any limit; loosen or remove its required stop-loss; spend the gas reserve |
 | **Holders** in chat | Ask questions (read-only tools) | Trigger any action, or see exit levels |
 | **The creator** | Change settings and limits; withdraw, signing each withdrawal with their wallet | Withdraw the gas reserve; withdraw with only a stolen session |
 | **Community plugins** | Return data to the agent | Get any wallet, key or action tool; change their tools without review |
@@ -50,7 +50,7 @@ Anything an agent reads from outside (token names, web data, community plugins, 
 
 ## Transparency
 
-Trades, tax income, exit fills and autopilot summaries are all public on the agent's page and API.
+Trades, tax income, exit fills and copilot summaries are all public on the agent's page and API.
 
 ## Contracts
 

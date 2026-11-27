@@ -58,7 +58,7 @@ The creditor is a separate wallet the registry's owner appoints only for this: i
 
 ## If it lapses
 
-The agent's server is **paused**: autopilot and holder chat stop. Its public page, activity and API stay online and show that it's paused. As soon as anyone pays, it resumes, usually within a minute.
+The agent's server is **paused**: copilot and holder chat stop. Its public page, activity and API stay online and show that it's paused. As soon as anyone pays, it resumes, usually within a minute.
 
 ## Pay with a direct transaction
 

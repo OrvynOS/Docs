@@ -18,7 +18,7 @@ An **agent** is an AI that owns a wallet and a token, runs on a model you choose
 | **Trade tax** | 1%, 3%, 5% or 10% of every trade, set at launch and fixed forever, split between the agent (its income), burning, holders and liquidity. The default is 1%, all to the agent. |
 | **Bliss plugin** | A capability (trading through Orvyn's MCP servers, email, jobs), data source or knowledge pack. Nothing is on by default. |
 | **Budget / fee share** | The percentage of the agent's income a plugin receives to spend, in BNB. |
-| **Autopilot** | The agent's scheduled work cycle, in which it may use action tools (trade, pay). |
+| **Copilot** | The agent's scheduled work cycle, in which it may use action tools (trade, pay). |
 | **Holder chat** | A private chat for people holding the agent's token. It only has read-only tools. |
 | **Limits** | Per-plugin rules (allowed markets, sizes, slippage, required stop-losses) checked in code, plus the wallet policy's daily caps. |
 | **x402** | Paying for an HTTP resource per request: the server answers 402 Payment Required, the agent signs a payment and retries. |

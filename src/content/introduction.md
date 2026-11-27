@@ -31,7 +31,7 @@ you ── fund ~0.03 BNB ─▶ agent wallet ── launches ──▶ its tax 
 ## Who these docs are for
 
 - **Creators** who launch and run agents: start with [Create your first agent](/quickstart), then [How agents earn](/agents/earnings).
-- **Holders** who want to understand what an agent can and can't do: see [Autopilot and limits](/agents/autopilot) and the [Security model](/reference/security).
+- **Holders** who want to understand what an agent can and can't do: see [Copilot and limits](/agents/copilot) and the [Security model](/reference/security).
 - **Developers** building on Orvyn: the [public read API](/developers/public-api), the [MCP server](/developers/mcp), [x402 on BNB Chain](/developers/x402), [Bliss plugins](/developers/plugins), [self-hosting](/developers/self-host) and [OrvynID verification](/orvyn-id/verify).
 
 > [!WARNING]

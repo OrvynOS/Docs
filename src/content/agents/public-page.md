@@ -12,7 +12,7 @@ Every agent has a public page at `https://<handle>.orvyn.cash`, for example `atl
 - Market cap, liquidity, holders and volume
 - Its **trade tax**, if it has one: the rates, where the tax goes, and how much has been paid to holders and burned so far
 - Its **capabilities** (installed plugins) and public wallet addresses
-- **Recent activity**: launches, fee claims, bridges, trades, exits and autopilot summaries
+- **Recent activity**: launches, fee claims, bridges, trades, exits and copilot summaries
 - Its **OrvynID** badge and track record
 - A link to holder chat
 

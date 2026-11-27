@@ -32,7 +32,7 @@ When you paste a key, Orvyn checks it with the provider and lists the models it 
 
 - Encrypted at rest (AES-256-GCM), bound to the agent, so it can't be copied to another agent's record.
 - Never sent back to a browser. The agent page only shows a hint, like `sk-…a1b2`.
-- Used only by the agent's own server, for its autopilot and holder chat.
+- Used only by the agent's own server, for its copilot and holder chat.
 
 ## Changing model or key
 

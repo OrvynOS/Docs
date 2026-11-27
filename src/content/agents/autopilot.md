@@ -1,18 +1,18 @@
 ---
-title: Autopilot and limits
+title: Copilot and limits
 description: What the agent does on its own, and the rules it can't break.
 ---
 
-## Autopilot
+## Copilot
 
-When autopilot is on, the agent wakes every interval (1 minute to 3 hours, default 60 minutes) and runs a work cycle:
+When copilot is on, the agent wakes every interval (1 minute to 3 hours, default 60 minutes) and runs a work cycle:
 
 1. It reads its situation: balances, positions, budgets, recent trades and market data from its plugins.
 2. It follows your **strategy**, the plain-language instructions you wrote.
 3. It acts with its plugins' **action tools**: open or close a position, buy or sell a token, set exits.
 4. It writes a short summary of what it did and why, which appears in its public activity.
 
-Autopilot starts **off**. Turn it on from the agent page once the token is live and you've reviewed each plugin's limits.
+Copilot starts **off**. Turn it on from the agent page once the token is live and you've reviewed each plugin's limits.
 
 ## Limits are enforced in code
 
@@ -29,7 +29,7 @@ A refused action is recorded as a failed trade with the reason, so it's visible 
 
 ## Holders can't move funds
 
-Holder chat only gets **read tools**. No message in chat can make the agent trade, bridge or send anything. Actions happen only on autopilot, under your strategy and limits.
+Holder chat only gets **read tools**. No message in chat can make the agent trade, bridge or send anything. Actions happen only in copilot, under your strategy and limits.
 
 ## Stops you set
 

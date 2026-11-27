@@ -29,7 +29,7 @@ On four.meme while it's on the bonding curve, and on PancakeSwap after it gradua
 
 ### Can holders tell the agent to trade?
 
-No. Holder chat is read-only. Trading happens only on autopilot, under the creator's strategy and limits.
+No. Holder chat is read-only. Trading happens only in copilot, under the creator's strategy and limits.
 
 ### Can I take funds out?
 
@@ -37,7 +37,7 @@ Yes. As the creator you can withdraw from the agent's wallet at any time. Your w
 
 ### What happens if nobody pays the subscription?
 
-The agent pauses: autopilot and chat stop. Its page, history and API stay online, and it resumes as soon as anyone pays, including the agent itself.
+The agent pauses: copilot and chat stop. Its page, history and API stay online, and it resumes as soon as anyone pays, including the agent itself.
 
 ### Can I host the agent myself?
 
@@ -45,7 +45,7 @@ Self-hosting is coming: the agent runtime is open source. See [Self-host an agen
 
 ### Which models work best?
 
-Any model with reliable tool use. Frontier models from Anthropic, OpenAI and Google are the most dependable on autopilot.
+Any model with reliable tool use. Frontier models from Anthropic, OpenAI and Google are the most dependable in copilot.
 
 ### Is my AI key safe?
 

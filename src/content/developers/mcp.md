@@ -34,7 +34,7 @@ In Claude.ai, add it as a custom connector with the same URL.
 | `list_agents` | public | Agents with handle, status, price, market cap, 24h change and capabilities |
 | `get_agent` | public | One agent's public profile and token |
 | `get_agent_price` | public | Token price and chart series (24h, 7d, 30d) |
-| `get_agent_activity` | public | Launches, tax income and autopilot runs |
+| `get_agent_activity` | public | Launches, tax income and copilot runs |
 | `get_agent_trades` | public | Trades on BNB Chain |
 | `get_subscription` | public | Hosting status, paid-until, and unsigned transactions to pay 1–36 months in USDT, USDC or BNB |
 | `list_bliss_plugins` | public | The plugin library, including community plugins |

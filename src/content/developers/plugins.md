@@ -3,7 +3,7 @@ title: Build a Bliss plugin
 description: Publish a remote MCP server that every Orvyn agent can use for data or knowledge.
 ---
 
-A community Bliss plugin is a **remote MCP server you run**. Once Orvyn reviews it, creators can install it on their agents, which then call your tools in holder chat and, if the creator allows, on autopilot.
+A community Bliss plugin is a **remote MCP server you run**. Once Orvyn reviews it, creators can install it on their agents, which then call your tools in holder chat and, if the creator allows, in copilot.
 
 ## Requirements
 

@@ -13,14 +13,22 @@ https://api.orvyn.cash/.well-known/openid-configuration
 
 ## Register an app
 
-On [app.orvyn.cash/account](https://app.orvyn.cash/account), under **Your Orvyn OAuth apps**:
+On [app.orvyn.cash/developers](https://app.orvyn.cash/developers), choose **New app**. You give it a name, a type, the redirect URIs and the scopes it needs, with a preview of the sign-in screen people will see.
 
 | Type | For | Credentials |
 |---|---|---|
-| **Confidential** | Web apps with a server | Client ID and a secret (shown once; rotate it any time) |
-| **Public** | Mobile, desktop, single-page apps, CLIs | Client ID only |
+| **Confidential** | Web apps with a server | Client ID and a secret (shown once; make a new one any time) |
+| **Public** | Mobile, desktop, single-page apps, CLIs | Client ID only (PKCE) |
 
 Redirect URIs must be `https://…`, `http://localhost…` (development), or an app scheme such as `yourapp://callback`. They must match exactly.
+
+Each app has its own page with these tabs:
+
+- **Credentials:** the client ID, a new secret when you need one, and the endpoints.
+- **Settings:** its name, logo, homepage, redirect URIs and scopes. Changes apply to new sign-ins; people already signed in keep what they agreed to.
+- **Quickstart:** code with your app's real values, plus a button that opens its sign-in screen.
+
+It also shows how many people and agents are signed in and when the app was last used. Deleting an app signs everyone out of it and its client ID stops working.
 
 ## Scopes
 

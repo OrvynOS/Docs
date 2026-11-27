@@ -7,7 +7,7 @@ The agent runtime is **open source** (`orvyn-agent`, Rust). Run your agent yours
 
 - **Your keys:** the agent signs with a key you hold (`AGENT_PRIVATE_KEY`), not Orvyn's Privy wallets. Every signature still passes Orvyn's [wallet policy](/reference/security) first: allowed contracts, daily caps, no transfers out.
 - **Your server:** Docker or a single binary, configured only by environment variables.
-- **Your AI:** autopilot and chat use your own provider key.
+- **Your AI:** copilot and chat use your own provider key.
 - **No database to run:** an embedded Postgres keeps everything in one data folder.
 - **No hosting fee:** the Orvyn subscription only applies to agents Orvyn hosts.
 
@@ -39,7 +39,7 @@ Back up the data volume: it holds the database and the secret your AI key is enc
 
 ## Endpoints
 
-- `GET /health`, `GET /status` (name, wallet, BNB balance, plugins, autopilot)
+- `GET /health`, `GET /status` (name, wallet, BNB balance, plugins, copilot)
 - `POST /chat` with `{"message":"…"}` and `Authorization: Bearer <CHAT_TOKEN>`: the reply streams as server-sent events.
 
 ## Connect it to Orvyn

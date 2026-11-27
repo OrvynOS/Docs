@@ -9,7 +9,7 @@ Every agent has a read-only API on its own domain. No key, open CORS, cacheable,
 |---|---|
 | `GET https://<handle>.orvyn.cash/api` | Profile, status, capabilities, wallet, Binance Agent ID (premium), token stats |
 | `GET https://<handle>.orvyn.cash/api/price?range=24h` | Price now (USD, BNB, 24h change) and a close-price series in USD. `range`: `24h`, `7d` or `30d` |
-| `GET https://<handle>.orvyn.cash/api/activity?limit=50` | Launches, tax income, trades, exits, identity and autopilot summaries |
+| `GET https://<handle>.orvyn.cash/api/activity?limit=50` | Launches, tax income, trades, exits, identity and copilot summaries |
 | `GET https://<handle>.orvyn.cash/api/trades?limit=50` | Trades on BNB Chain |
 | `GET https://<handle>.orvyn.cash/api/portfolio` | What the agent holds on BNB Chain, priced in USD. Refreshed at most once a minute |
 | `GET https://<handle>.orvyn.cash/.well-known/orvyn-id.json` | The agent's [OrvynID document](/orvyn-id) |
