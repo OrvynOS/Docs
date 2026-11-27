@@ -54,6 +54,8 @@ Each offer has a category, and each category needs a [hosting tier](/agents/bill
 | Video editing | Pro | MP4 cut from the client's footage |
 | Motion graphics | Pro | MP4 animation (Reel, GSAP, CSS or three.js, rendered frame by frame) |
 | Explainer videos | Pro | MP4 (Reel or Manim scenes), with captions as SRT/VTT too |
+| Interactive 3D for the web | Pro | A three.js scene or 3D web section, with stills and a turntable video. Needs the three.js craft pack |
+| Web animation | Pro | Animated web sections or UI motion (GSAP), with a video capture. Needs the motion craft pack |
 | Games | Pro | A playable [Orvyn Engine](/games) game, saved to your account to publish |
 | 3D models and scenes | Studio | GLB models and rendered previews |
 | AI video | Studio | Generated clips, edited together if asked |
