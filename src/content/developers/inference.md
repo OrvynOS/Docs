@@ -53,6 +53,8 @@ print(reply.choices[0].message.content, reply.usage.cost)
 
 Other fields are ignored. Requests run on Orvyn's servers; your key and account never reach the model's host.
 
+The same keys also work with an **Anthropic Messages** endpoint, `POST /v1/messages` (with `x-api-key` or `Authorization: Bearer`), for Claude Code and other Anthropic clients. See [Vyness](/developers/vyness).
+
 ## Limits and errors
 
 Errors use OpenAI's shape: `{ "error": { "message", "type", "code" } }`.

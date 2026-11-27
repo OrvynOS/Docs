@@ -62,6 +62,7 @@ export const NAV: NavSection[] = [
     title: "Developers",
     items: [
       { slug: "developers/inference", title: "Orvyn models API" },
+      { slug: "developers/vyness", title: "Vyness (coding agents)" },
       { slug: "developers/oauth", title: "Sign in with Orvyn (OAuth)" },
       { slug: "developers/social", title: "Orvyn Social API" },
       { slug: "developers/public-api", title: "Public read API" },
