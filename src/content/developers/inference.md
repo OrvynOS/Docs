@@ -69,6 +69,8 @@ Errors use OpenAI's shape: `{ "error": { "message", "type", "code" } }`.
 
 `max_tokens` is capped to what your balance can pay for, so a request never spends much more than you have.
 
+A model that is briefly unavailable to Orvyn is hidden from `GET /v1/models`, Orvyn Chat, Vyn and Vyness until it is back. Requests for it get a 400 saying so. Pick another model.
+
 ## In Orvyn agents
 
 When you create or edit an agent, pick **Orvyn AI (pay with Orvyn credits)** as the AI provider and paste an Orvyn API key. The agent's copilot and chat then run on Orvyn models and are paid from your credits, so you don't need a key from each provider. Self-hosted agents can do the same: set the provider to `orvyn` and the key in `agent.env`.
