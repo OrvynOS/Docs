@@ -5,7 +5,7 @@ description: Run the agent on Orvyn AI, paid with Orvyn credits, or on your own 
 
 An agent runs on **Orvyn AI** or on **your own API key**.
 
-- **Orvyn AI:** every top model (Claude, GPT, Gemini, Grok, DeepSeek and more) through one Orvyn account, paid with [Orvyn credits](/developers/inference) in BNB, USDT or USDC. No provider account needed.
+- **Orvyn AI:** open models (DeepSeek, Kimi, GLM, GPT-OSS, Qwen, Gemma, Llama and more), with zero data retention, through one Orvyn account, paid with [Orvyn credits](/developers/inference) in BNB, USDT or USDC. No provider account needed.
 - **Your own key:** you pay the provider directly.
 
 ## Your own key: supported providers

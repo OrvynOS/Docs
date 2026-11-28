@@ -1,6 +1,6 @@
 ---
 title: Orvyn models API
-description: Call Claude, GPT, Gemini, Grok, DeepSeek and more through one OpenAI-compatible endpoint, paid from your Orvyn credits.
+description: Call open models (DeepSeek, Kimi, GLM, GPT-OSS, Qwen and more) through one OpenAI- and Anthropic-compatible endpoint, paid from your Orvyn credits.
 ---
 
 Orvyn serves many AI models behind one endpoint that speaks the **OpenAI Chat Completions API**. You pay from your **Orvyn credits**, the same balance [Orvyn Chat](https://app.orvyn.cash/chat) uses, topped up with BNB, USDT or USDC on BNB Chain.
@@ -20,7 +20,7 @@ curl https://api.orvyn.cash/v1/chat/completions \
   -H "Authorization: Bearer $ORVYN_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "anthropic/claude-sonnet-5.5",
+    "model": "deepseek/deepseek-v4.1-flash",
     "messages": [{ "role": "user", "content": "Write a haiku about BNB Chain." }]
   }'
 ```
@@ -32,7 +32,7 @@ from openai import OpenAI
 
 client = OpenAI(base_url="https://api.orvyn.cash/v1", api_key="orv_sk_…")
 reply = client.chat.completions.create(
-    model="openai/gpt-6.2-sol",
+    model="moonshotai/kimi-k3.1-pro",
     messages=[{"role": "user", "content": "Summarise today's BNB news in 3 bullets."}],
 )
 print(reply.choices[0].message.content, reply.usage.cost)
@@ -40,9 +40,9 @@ print(reply.choices[0].message.content, reply.usage.cost)
 
 ## Models
 
-`GET /v1/models` lists the models your key can use. Orvyn offers a curated set from Anthropic, OpenAI, Google, xAI, DeepSeek, Qwen, Moonshot, Z.ai and Mistral; the [Credits page](https://app.orvyn.cash/credits) and Orvyn Chat show each one's price per million tokens.
+`GET /v1/models` lists the models your key can use. Orvyn offers a curated set of open-weight models: DeepSeek, Kimi, GLM, GPT-OSS, MiniMax, Qwen, Nemotron, Gemma and Llama. Frontier models (Claude, GPT, Gemini, Grok) aren't on Orvyn AI: use your own provider key for those, in an agent's or Vyn's AI settings; the [Credits page](https://app.orvyn.cash/credits) and Orvyn Chat show each one's price per million tokens.
 
-**Default model:** Claude Haiku 5.5 (`anthropic/claude-haiku-5.5`). A request without `model` uses your default, which you can change in Orvyn Chat's model picker (**Make … my default**) or with `PUT /v1/default-model` (`{ "model": "<id>" }`, or `null` for Orvyn's default). `GET /v1/default-model` returns it.
+**Default model:** DeepSeek V4.1 Flash (`deepseek/deepseek-v4.1-flash`). A request without `model` uses your default, which you can change in Orvyn Chat's model picker (**Make … my default**) or with `PUT /v1/default-model` (`{ "model": "<id>" }`, or `null` for Orvyn's default). `GET /v1/default-model` returns it.
 
 **Orvyn Model**, Orvyn's own model, is coming soon. It's listed in Orvyn Chat but can't be called yet.
 
@@ -54,6 +54,8 @@ print(reply.choices[0].message.content, reply.usage.cost)
 - Streaming: `"stream": true` sends server-sent events ending with `data: [DONE]`. The last chunk before it carries `usage`, including `cost`.
 
 Other fields are ignored. Requests run on Orvyn's servers; your key and account never reach the model's host.
+
+**Zero data retention.** Orvyn AI only serves models it can run where your prompts and replies are not kept: every request goes to a Zero Data Retention endpoint, at a provider that doesn't collect data. Models without one (including those whose only option keeps data for abuse checks) aren't offered.
 
 The same keys also work with an **Anthropic Messages** endpoint, `POST /v1/messages` (with `x-api-key` or `Authorization: Bearer`), for Claude Code and other Anthropic clients. See [Vyness](/developers/vyness).
 

@@ -34,13 +34,13 @@ Vyness shows a code and opens [app.orvyn.cash/device](https://app.orvyn.cash/dev
 
 ```bash
 vyness claude                 # Claude Code, on your default model
-vyness claude --model anthropic/claude-opus-5.5
+vyness claude --model moonshotai/kimi-k3.1-pro
 vyness opencode               # OpenCode, with an "Orvyn AI" provider
 vyness aider src/main.rs      # Aider, on your default model unless you pass --model
 vyness run -- my-agent --task "fix the tests"
 ```
 
-Agents start on **your default model**: Claude Haiku 5.5 unless you choose another. Change it with `vyness model <id>` (or in Orvyn Chat), see it with `vyness model`, and go back with `vyness model --reset`. For one run, pass `--model` (or set `VYNESS_MODEL`). In Claude Code, `/model` still switches between the Opus, Sonnet and Haiku tiers.
+Agents start on **your default model**: DeepSeek V4.1 Flash unless you choose another. Change it with `vyness model <id>` (or in Orvyn Chat), see it with `vyness model`, and go back with `vyness model --reset`. For one run, pass `--model` (or set `VYNESS_MODEL`). In Claude Code, `/model` switches tiers: Opus runs Kimi K3.1 Pro, Sonnet runs GLM 5.3 and Haiku runs DeepSeek V4.1 Flash. Orvyn AI serves open models only; to run Claude Code on Claude itself, use your own Anthropic account with `claude`.
 
 Arguments after the command go to the agent unchanged.
 
@@ -74,7 +74,7 @@ curl https://api.orvyn.cash/v1/messages \
   -H "x-api-key: $ORVYN_API_KEY" \
   -H "anthropic-version: 2023-06-01" \
   -H "content-type: application/json" \
-  -d '{ "model": "anthropic/claude-sonnet-5.5", "max_tokens": 1024, "messages": [{ "role": "user", "content": "Hello" }] }'
+  -d '{ "model": "deepseek/deepseek-v4.1-flash", "max_tokens": 1024, "messages": [{ "role": "user", "content": "Hello" }] }'
 ```
 
 It supports streaming, tools, extended thinking and prompt caching (`anthropic-beta` is passed through). `POST /v1/messages/count_tokens` gives an estimate, and `GET /v1/credits` returns the key's balance.
